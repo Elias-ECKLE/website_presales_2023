@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Inconsolata-Medium';
+    src: url("../font/Inconsolata-Medium.ttf") format("truetype")
+}
+
+*{
+    background-image:url("../sources/bg.jpg");
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+p{
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+    display: fixed;
+    margin-bottom: 3.5%;
+
+    font-family: Inconsolata-Medium;
+}
+
+p img{
+    width:4%;
+    margin-bottom : -2%;
+}
+
+#div1{
+    display : flex;
+    justify-content: space-around;
+    height:60vh;
+    align-items: center;
+    margin-bottom: -9%;
+}
+
+#childDiv1{
+    margin-left:5.5%;
+}
+#childDiv2{
+    margin-right: 0.5%;
+}
+#childDiv2 img{
+width:90%;
+}
+#p1{
+    width:100vw;
+    font-size:2.7em;
+    color : #5D5B1D;
+    margin-top: 8%;
+
+}
+#p1 #span1{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+#p1 #span2{
+    color:#D97A23;
+    margin:0;
+}
+
+#p2{
+    font-size : 2em;
+}
+#p2 a{
+    color: #009FD0;
+    text-decoration: none;
+}
+
+
+/*------------------------------------------------------------------------*/
+/*tablet*/
+@media (max-width: 1050px) {
+    #childDiv1 img{
+        width:110%;
+    }
+    #childDiv2 img{
+        width:90%;
+    }
+    #p1{
+        font-size: 2em;
+
+        margin-bottom: 7%;
+    }
+    #p2{
+        font-size:1.3em;
+    }
+}
+
+/*mobile*/
+@media (max-width: 600px){
+
+    #div1{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top:25%;
+        margin-bottom: 35%;
+    }
+    #childDiv1{
+        margin-left:0%;
+        order : 2;
+    }
+    #childDiv2{
+        margin-right: 0%;
+        order:3;
+    }
+    #childDiv3{
+        order:1
+    }
+    #childDiv1 img{
+        width:95%;
+    }
+    #childDiv2 img{
+        width:100%;
+    }
+    #childDiv3 img{
+        width:100%;
+        margin-top:-10%;
+    }
+
+
+
+
+    #p1{
+        width:95vw;
+        font-size: 1.7em;
+        /*margin-top:25%;*/
+        margin-bottom: 10%;
+    }
+    #p1 #span1{
+        display: inline-block;
+    }
+    #p1 #span2{
+        display: block;
+        margin-top:3%;
+        margin-bottom: 3%;
+    }
+    #p2 {
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #p2 a{
+        margin-top:2.5%;
+        margin-bottom:2.5%;
+    }
+    #p2 a img{
+        width:10%;
+        display: block;
+
+       margin-left: auto;
+        margin-right:auto;
+
+    }
+}
+
