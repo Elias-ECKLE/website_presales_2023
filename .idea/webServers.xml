@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2b4ee0a2-ae12-48f0-a4a3-65a5a7fdf7ed" name="presales_hebergementElias">
+        <fileTransfer accessType="SFTP" host="access906212448.webspace-data.io" port="22" sshConfigId="8969ffe1-54f5-4042-96fb-9a83c56401b9" sshConfig="u1427627356@access906212448.webspace-data.io:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

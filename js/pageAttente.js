@@ -31,6 +31,9 @@ function test() {
         if(document.getElementById('childDiv3')){
             document.getElementById('childDiv3').remove();
         }
+        var childDiv2 = document.getElementById('childDiv2');
+        var childDiv2_img = document.getElementById('childDiv2_img');
+        childDiv2_img.src="sources/pageAttente/texteEtTitre_img.png";
 
     }
 
