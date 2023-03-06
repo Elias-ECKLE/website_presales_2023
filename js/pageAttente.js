@@ -14,7 +14,7 @@ function test() {
 
             //img
             imgChildDiv3 = document.createElement('img');
-            imgChildDiv3.setAttribute('src',"../sources/pageAttente/texteTitre_img.png");
+            imgChildDiv3.setAttribute('src',"sources/pageAttente/texteTitre_img.png");
             imgChildDiv3.setAttribute('alt', "imgDates");
 
             childDiv3.appendChild(imgChildDiv3);
