@@ -4,9 +4,9 @@
 }
 
 *{
-    background-image:url("../sources/bg.jpg");
+    background-image:url("../sources/bg.png");
     background-attachment: fixed;
-    background-repeat:no-repeat;
+   /* background-repeat:no-repeat;*/
 }
 
 /*-----------------------------------------------------------------------------*/
