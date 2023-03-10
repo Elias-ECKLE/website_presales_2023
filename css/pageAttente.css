@@ -9,13 +9,13 @@
    /* background-repeat:no-repeat;*/
 }
 
+
 /*-----------------------------------------------------------------------------*/
 
 p{
     text-align: center;
     margin-left:auto;
     margin-right: auto;
-    display: fixed;
     margin-bottom: 3.5%;
 
     font-family: Inconsolata-Medium;
@@ -29,7 +29,7 @@ p img{
 #div1{
     display : flex;
     justify-content: space-around;
-    height:60vh;
+    height:60dvh;
     align-items: center;
     margin-bottom: -9%;
 }
@@ -44,7 +44,7 @@ p img{
 width:90%;
 }
 #p1{
-    width:100vw;
+    width:100dvw;
     font-size:2.7em;
     color : #5D5B1D;
     margin-top: 8%;
@@ -69,10 +69,21 @@ width:90%;
     text-decoration: none;
 }
 
+@media screen and (max-width: 1024px){
+    #text_biblioteca {
+        margin-left:24.553954%;
+    }
+    #image2_biblioteca {
+        margin-left:24.165918%
+    }
+    #box2_biblioteca {
+        margin-left:7.57416%
+    }
+}
 
 /*------------------------------------------------------------------------*/
 /*tablet*/
-@media (max-width: 1050px) {
+@media screen and (max-width: 1050px) {
     #childDiv1 img{
         width:110%;
     }
@@ -82,7 +93,7 @@ width:90%;
     #p1{
         font-size: 2em;
 
-        margin-bottom: 7%;
+         margin-bottom: 7%;
     }
     #p2{
         font-size:1.3em;
@@ -90,14 +101,14 @@ width:90%;
 }
 
 /*mobile*/
-@media (max-width: 600px){
+@media screen and (max-width: 600px){
 
     #div1{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         margin-top:25%;
-        margin-bottom: 35%;
+        margin-bottom: 13%;
     }
     #childDiv1{
         margin-left:0%;
@@ -106,6 +117,7 @@ width:90%;
     #childDiv2{
         margin-right: 0%;
         order:3;
+
     }
     #childDiv3{
         order:1
@@ -118,21 +130,17 @@ width:90%;
     }
     #childDiv3 img{
         width:100%;
-        margin-top:-10%;
+        margin-top:-5%;
     }
 
 
-
-
     #p1{
-        width:95vw;
+        width:95dvw;
         font-size: 1.7em;
         /*margin-top:25%;*/
         margin-bottom: 10%;
     }
-    #p1 #span1{
-        display: inline-block;
-    }
+
     #p1 #span2{
         display: block;
         margin-top:3%;
@@ -143,6 +151,7 @@ width:90%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+
     }
     #p2 a{
         margin-top:2.5%;
