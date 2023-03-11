@@ -7,6 +7,7 @@
     background-image:url("../sources/bg.png");
     background-attachment: fixed;
    /* background-repeat:no-repeat;*/
+
 }
 
 
@@ -101,7 +102,7 @@ width:90%;
 }
 
 /*mobile*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) and (orientation: portrait){
 
     #div1{
         flex-direction: column-reverse;
@@ -167,3 +168,14 @@ width:90%;
     }
 }
 
+@media screen and (max-width:600px) and (orientation: landscape) {
+    html {
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        width: 100vh;
+        overflow-x: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+}
