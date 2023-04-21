@@ -1,0 +1,23 @@
+/*------------------------------------------Article Espace presse---------------------------------------------------*/
+
+#edition2022 iframe{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:3%;
+    width:60%;
+    height:473px;
+}
+
+#edition2022 p{
+    text-align: center;
+    color:white;
+}
+#espacePresse_Credits{
+    font-family: Teko-SemiBold;
+font-size:1.3em;
+}
+
+#edition2022 span{
+    width:0.7%;
+}

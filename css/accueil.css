@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src: url("../font/BebasNeue-Regular.ttf") format("truetype");
+
+    font-family: 'Teko-SemiBold';
+    src:url("../font/Teko-SemiBold.ttf") format("truetype");
+
+    font-family: 'Inconsolata-Medium';
+    src: url("../font/Inconsolata-Medium.ttf") format("truetype");
+    font-family: 'Inconsolata-Bold';
+    src: url("../font/Inconsolata-Bold.ttf") format("truetype");
+
+    font-family: 'Proxima-Nova-Font';
+    src: url("../font/Proxima-Nova-Font.otf") format("truetype");
+    font-family: 'Proxima-Nova-Bold';
+    src: url("../font/Proxima-Nova-Bold.otf") format("truetype");
+}
+
+
+
+#accueil p{
+    color: white;
+
+
+}
+#accueil div{
+    display: flex;
+    flex-direction: row;
+
+}
+#accueilDivGlobal{
+    justify-content: space-between;
+}
+
+
+/* div gauche*/
+#accueil div div:first-child{
+    flex-direction: column;
+    width:64vw;
+    justify-content: space-between;
+}
+
+
+
+
+/*div droite */
+
+#accueil div img{
+    width: calc(220px + 10vw)
+}
+
+
+#btnDecouvrez{
+
+    width: calc(100px + 14vw);
+    height:7vh;
+    background-color: #f3e99f;
+}
+#btnDecouvrez p {
+    color: #70510e;
+}

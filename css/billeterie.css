@@ -1,0 +1,71 @@
+
+#billeterie #billeterieDivGlobale{
+    display: flex;
+    justify-content: space-between;
+
+}
+#billeterie p{
+    color:white;
+}
+#billeterie img{
+    width:calc(130px + 25vw);
+}
+
+
+
+#billeterie #billeterieDivPrevente{
+    margin-bottom:5%;
+}
+#billeterie #billeterieDivPrevente p{
+    display:inline-block;
+}
+#billeterie #billeterieDivPrevente .tarifsTextes{
+    display:inline-block;
+    margin-left:50px;
+}
+#billeterie #billeterieDivPlace{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:5%;
+    margin-left:25%;
+}
+
+#billeterie #billeterieDivPlace .tarifsTextes{
+    display:inline-block;
+    margin-left:50px;
+
+}
+
+
+
+
+#billeterie .tarifsGrossisement{
+    font-size:calc(13px + 1.6vw);
+    font-weight: bold;
+    color: #fff6c4;
+    font-family: BebasNeue-Regular;
+}
+
+
+
+
+
+#billeterie .divSloganTexte p{
+    color:white;
+}
+
+
+
+/*bouton réserver------------------------*/
+#btnReserver{
+
+    width: calc(100px + 14vw);
+    height:7vh;
+    background-color: #f3e99f;
+    margin-top:10%;
+}
+#btnReserver p {
+    color: #70510e;
+}
+
+

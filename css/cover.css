@@ -1,0 +1,22 @@
+/* --------------------------------------------Article cover--------------------------------------------------------*/
+article:first-child{
+    height:80vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../sources/vraiSite/cover/planchesCover.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+article:first-child img{
+    width:calc(960px + 25vw);
+    height:calc(540px + 25vh);
+}
+#imgCover1{
+
+}
+#imgCover2{
+
+}

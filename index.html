@@ -2,30 +2,386 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
-    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
-    <link href="css/pageAttente.css" rel="stylesheet">
-    <script src="js/pageAttente.js"></script>
+    <title>Festival Pré Salés</title>
 
-    <title>Page d'attente</title>
+    <!----------------------------------------------CSS------------------------------------------>
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/burgerMenu.css" rel="stylesheet">
+    <link href="css/btnBack.css" rel="stylesheet">
+
+    <link href="css/cover.css" rel="stylesheet">
+    <link href="css/accueil.css" rel="stylesheet">
+    <link href="css/programmation.css" rel="stylesheet">
+    <link href="css/billeterie.css" rel="stylesheet">
+    <link href="css/bonusFestifs.css" rel="stylesheet">
+    <link href="css/nosProducteurs.css" rel="stylesheet">
+    <link href="css/nosValeurs.css" rel="stylesheet">
+    <link href="css/devenirPartenaire.css" rel="stylesheet">
+    <link href="css/infoGenerales.css" rel="stylesheet">
+    <link href="css/espacePresse.css" rel="stylesheet">
+
+
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
+    <script src="js/burgerMenu.js"></script>
+
+    <script src="https://kit.fontawesome.com/858ff30383.js" crossorigin="anonymous"></script>
+
+
+
 </head>
-<body onload="test()", onresize="test()">
-    <div id="div0">
-        <div id="div1">
-            <div id="childDiv1" class="div1_child">
-                <img src="sources/pageAttente/plateau_img.png" alt="plateauPreSales">
-            </div>
-            <div id="childDiv2" class="div1_child">
-                <img id="childDiv2_img" src="sources/pageAttente/texteEtTitre_img.png" alt="titresPreSales">
-            </div>
-        </div>
-    </div>
+<body onload="setupBurgerMenu()" >
 
-    <p id="p1">Bientôt ici, toutes les infos sur notre <span id="span1">édition 2023.</span> <span id="span2"> La bise ! </span></p>
-    <p id="p2">En attendant retrouvez-nous sur
-        <a href="https://www.facebook.com/PresSalesFestival"><img src="sources/icons/FB.png" alt="icon facebook"> Facebook</a>
-        <a href="https://www.instagram.com/festival_pres_sales/"><img src="sources/icons/Insta.png" alt="icon instagram"> Instagram </a>
-        <a href="https://www.youtube.com/@festivalpressales6257/featured"><img src="sources/icons/YT.png" alt="icon Youtube"> Youtube </a>
-    </p>
+<!-----------------------------------------HEADER--------------------------------------------------------->
+    <header>
+        <a id="logo" href="#"><img src="sources/icons/logo.png" alt="logo"></a>
+
+        <a href="javascript:void(0)" id="openBtn">
+            <img src="sources/icons/burgerIcon.png" alt="burgerMenu">
+        </a>
+    </header>
+
+<!------------------------------------------ASIDE----------------------------------------------------------->
+    <aside>
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="javascript:void(0)" class="close">&times;</a>
+            <ul>
+                <li><a href="#accueil" onclick="closeNav2()">Accueil</a></li>
+                <li><a href="#programmation" onclick="closeNav2()">Programmation</a></li>
+                <li><a href="#bonusFestifs" onclick="closeNav2()">Bonus festifs</a></li>
+                <li><a href="#keskon" onclick="closeNav2()">Nos producteurs</a></li>
+                <li><a href="#valeurs" onclick="closeNav2()">Nos valeurs </a> </li>
+                <li><a href="#partenaire" onclick="closeNav2()">Devenir partenaire/mécène </a> </li>
+                <li><a href="#edition2022" onclick="closeNav2()">Espace presse </a> </li>
+                <li><a href="#" onclick="closeNav2()">Contact</a></li>
+            </ul>
+        </div>
+    </aside>
+
+
+
+
+    <main>
+        <!------------------------------------------COVER------------------------------------------------>
+        <article>
+
+
+        </article>
+
+        <!------------------------------------------ACCUEIL------------------------------------------------>
+        <article id="accueil">
+            <h1  class="h1_Odd" class="">Accueil</h1>
+            <!--<div class="divSeparateur divSeparateur_Odd"></div>-->
+            <div id="accueilDivGlobal" class="marginDiv">
+                <div>
+                    <p class="normalTexte">Nous sommes un festival indépendant et non lucratif. Notre programmation est éclectique et notre projet est ouvert, familial et axé sur la gastronomie locale et responsable. L’alternative que nous proposons est de plus en plus difficile à faire vivre aujourd’hui sur notre territoire, mais nous avons décidé d’agir afin de pouvoir continuer de vous proposer un festival accessible, accueillant dignement publics et artistes dans toute leur diversité en travaillant avec le tissu local.
+                        </br>   </br>  Soucieux de notre impact et appuyés par une autre vision de l’économie, plus humaine, plus sociale et plus solidaire. Nous sommes persuadé·es que ces valeurs sauront faire la différence.
+                    </p>
+                    <div class="divSloganTexte" id="sloganTexteAccueil">
+                        <span class="barreTexteSlogan_Odd"></span>
+                        <p class="sloganTexte">Un événement organisé par l'association Balance Ton Son, dans une ambiance familiale, festive et conviviale.</p>
+                    </div>
+
+                    <div id="btnDecouvrez" class="btnInteraction"><p>Découvrez le programme !</p></div>
+                </div>
+                <div>
+                    <img src="sources/vraiSite/accueil/Affiche_PreSales.jpg" alt="afficheFestival">
+                </div>
+            </div>
+
+
+        </article>
+
+        <!--------------------------------------- PROGRAMMATION----------------------------------------------->
+        <article id="programmation" >
+            <h1 class="h1_Even">Programmation</h1>
+           <!-- <div class="divSeparateur divSeparateur_Even"></div>-->
+
+            <div id="programmationDivGlobal">
+                <div id="programmationDiv1" class="marginDiv">
+                    <img src="sources/vraiSite/programmation/vendredi.jpg" alt="">
+                    <div>
+                        <div></div>
+                        <p class="artistesListees">| BE SCOTT PIPE BAND |  DEAFSLOW | NAST <br/><br/>    | DAVID VINCENT ET SES MUTANTS | AITEKA <br/><br/> | ROOTIKAL VIBES HIFI | MYSTICAL RISING <br/><br/> | CROOSTY | DUSTY WATA  <br/> <br/> *Plus d'autres surprises...</p>
+
+                    </div>
+
+                </div>
+                <div id="programmationDiv2">
+                    <div>
+
+                        <p class="artistesListees">ACEVOLTS | PIHPOH | MYSTICAL FAYA | <br/> <br/> MOUSE DTC | BROADY | ROOTIKAL VIBES HIFI | <br/> <br/> UNIVERSAL LOVE WARRIAS HI FI | DUSTY WATA | <br/> <br/>  *Plus d'autres surprises...</p>
+                        <div></div>
+                    </div>
+
+                    <img src="sources/vraiSite/programmation/samedi.jpg" alt="">
+                </div>
+
+                <div class="marginDiv">
+                    <div class="divSloganTexte">
+                        <span class="barreTexteSlogan_Even"></span>
+                        <p class="sloganTexte">Nous sommes un festival indépendant et non lucratif</p>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+        <!-----------------------------------------BILLETERIE-------------------------------------------------->
+        <article id="billeterie">
+            <h1  class="h1_Odd">Billeterie</h1>
+            <div id="billeterieDivGlobale" class="marginDiv">
+                <div>
+
+                    <div id="billeterieDivPrevente">
+                        <div class="divSloganTexte" id="sloganTexteBilleterie1">
+                            <span class="barreTexteSlogan_Odd"></span>
+                            <p class="sloganTexte">Prenez vos billets dès maintenant !</p>
+                        </div>
+                        <p class="normalTexte tarifsTextes"><span class="tarifsGrossisement">15€</span> par jour</p><p class="normalTexte tarifsTextes"><span class="tarifsGrossisement">25€</span> le pass 2 jours</p>
+                    </div>
+                    <div id="billeterieDivPlace">
+                        <div class="divSloganTexte" id="sloganTexteBilleterie2">
+                            <span class="barreTexteSlogan_Odd"></span>
+                            <p class="sloganTexte">Ou directement au guichet sur place...</p>
+                        </div>
+                        <div id="tarifsPlace">
+                            <p class="normalTexte tarifsTextes"><span class="tarifsGrossisement">20€</span> par jour</p><p class="normalTexte tarifsTextes"><span class="tarifsGrossisement">30€</span> le pass 2 jours</p>
+                        </div>
+
+                    </div>
+                    <div>
+                        <div class="divSloganTexte" id="sloganTexteBilleterie0">
+                            <span class="barreTexteSlogan_Odd"></span>
+                            <p class="sloganTexte">Gratuit jusqu'à 14 ans inclus !</p>
+                        </div>
+                        <p class="normalTexte">L'entrée est gratuite pour les jeunes jusqu'à 14 inclus. <br/> <br/>
+                            Vous avez entre 15 et 18 ans, vous pouvez également accéder au festival par l'intermédiaire du pass culture !
+                        </p>
+                    </div>
+
+                    <div id="btnReserver" class="btnInteraction"><p>Réservez dès à présent !</p></div>
+                </div>
+
+
+                <div>
+                    <img src="sources/vraiSite/billeterie/billeterie.jpg" alt="billeterie">
+                </div>
+            </div>
+
+
+        </article>
+
+        <!---------------------------------------BONUS FESTIFS------------------------------------------------>
+        <article id="bonusFestifs">
+            <h1  class="h1_Even">Bonus festifs</h1>
+           <!--  <div class="divSeparateur divSeparateur_Even"></div> -->
+        </article>
+
+        <!--------------------------------------NOS PRODUCTEURS---------------------------------------->
+        <article id="keskon">
+            <h1  class="h1_Odd">Nos producteurs</h1>
+           <!--  <div class="divSeparateur divSeparateur_Odd"></div> -->
+            <div id="keskonDiv1" class="marginDiv">
+                <div>
+                    <div class="divSloganTexte">
+                        <span class="barreTexteSlogan_Odd"></span>
+                        <p class="sloganTexte">Nous connaissons chaque producteur présent lors du festival, ses méthodes de travail et produits.</p>
+                    </div>
+                    <p class="normalTexte">Nos critères de sélection des producteurs et produits alimentaires locaux et éco-responsables prennent en compte la durabilité environnementale et sociale, la qualité des produits, la traçabilité et la diversité, ainsi que l'engagement en faveur de la santé et du bien-être des consommateurs.</p>
+                    <div  id="divSloganTexteGastronomie" class="divSloganTexte">
+                        <p class="sloganTexte">Ambiance familiale </p> <div class="barreTexteSlogan_Odd"></div> <p class="sloganTexte">Gastronomie locale & vins bio</p>
+                    </div>
+
+                </div>
+                <div>
+                    <img src="sources/vraiSite/producteurs/keskonMange_KeskonBoit.jpg" alt="affiche keskon mange keskon boit">
+                </div>
+
+            </div>
+
+            <div id="keskonDiv2" class="marginDiv">
+
+                <div class="parentGrid_Keskon">
+                    <div class="div1Grid">
+                        <a href="https://brasseriedugrillen.com/"><img src="sources/vraiSite/producteurs/listeProducteurs/brasserieGrillen.jpg"></a>
+                        <p class="producteurNom">Brasserie du Grillen</p>
+                        <p class="producteurLieu">Colmar</p>
+                    </div>
+                    <div class="div2Grid">
+                        <a href="https://bluebees.fr/fr/project/1001-la-pleurotiere"><img src="sources/vraiSite/producteurs/listeProducteurs/laPleurotiere.jpg"></a>
+                        <p class="producteurNom">La Pleurotière</p>
+                        <p class="producteurLieu">Soultzmatt</p>
+                    </div>
+                    <div class="div3Grid">
+                        <a href="https://m.facebook.com/people/Ferme-schubnel-jean-jacques/100054645031542/?locale=fr_FR"><img src="sources/vraiSite/producteurs/listeProducteurs/fermeSchubnel.jpg"></a>
+                        <p class="producteurNom">Ferme schubnel jean-jacques</p>
+                        <p class="producteurLieu">Wintzfelden</p>
+                    </div>
+                    <div class="div4Grid">
+                        <a href="https://amapfd-guebwiller.jimdofree.com/galeries-portraits/olivier-gutleben/"><img src="sources/vraiSite/producteurs/listeProducteurs/gutleben.jpg"></a>
+                        <p class="producteurNom">Gutleben Olivier </p>
+                        <p class="producteurLieu">Munwiller</p>
+                    </div>
+                    <div class="div5Grid">
+                        <a href="http://www.boulangerie-gwinner.fr/"><img src="sources/vraiSite/producteurs/listeProducteurs/boulangerieGwiner.jpg"></a>
+                        <p class="producteurNom">Boulangerie Gwinner</p>
+                        <p class="producteurLieu">Osenbach</p>
+                    </div>
+                    <div class="div6Grid">
+                        <a href="https://www.bienvenue-a-la-ferme.com/grandest/haut-rhin/merxheim/ferme/ferme-wild/443753"><img src="sources/vraiSite/producteurs/listeProducteurs/fermeWild.jpg"></a>
+                        <p class="producteurNom">Ferme Wild Jean-Marc</p>
+                        <p class="producteurLieu">Merxheim</p>
+                    </div>
+                    <div class="div7Grid">
+                        <a href="http://www.gaecsutter.fr.nf/"><img src="sources/vraiSite/producteurs/listeProducteurs/earlSutter.jpg"></a>
+                        <p class="producteurNom">Earl Sutter</p>
+                        <p class="producteurLieu">Petit-landau</p>
+                    </div>
+                    <div class="div8Grid">
+                        <a href="https://www.facebook.com/lesRuchesduRitzenthal"><img src="sources/vraiSite/producteurs/listeProducteurs/ruchesRitzenthal.jpg"></a>
+                        <p class="producteurNom">Les Ruches du Ritzenthal</p>
+                        <p class="producteurLieu">Wintzfelden</p>
+                    </div>
+                    <div class="div9Grid"> <a href="https://hoodspot.fr/cultivateur-de-fruits-a-pepins-et-a-noyaux/cidrerie-de-la-huppe-50212011600038/"><img src="sources/vraiSite/producteurs/listeProducteurs/cidrerieHuppe.jpg"></a>
+                        <p class="producteurNom">Cidrerie de la Huppe</p>
+                        <p class="producteurLieu">Soultzmatt</p>
+                    </div>
+                    <div class="div10Grid"> <a href="https://domaineboesch.fr/"><img src="sources/vraiSite/producteurs/listeProducteurs/domaineLeonBoesch.jpg"></a>
+                        <p class="producteurNom">Domaine Leon Boesch</p>
+                        <p class="producteurLieu">Westhalten</p>
+                    </div>
+                    <div class="div11Grid"> <a href="https://www.mure.com/"><img src="sources/vraiSite/producteurs/listeProducteurs/domaineMure.jpg"></a>
+                        <p class="producteurNom">Domaine Muré, Clos St Landelin</p>
+                        <p class="producteurLieu">Rouffach</p>
+                    </div>
+                    <div class="div12Grid"> <a href="https://www.les-recettes-de-bichette.com/"><img src="sources/vraiSite/producteurs/listeProducteurs/lesRecettesDeBichette.jpg"></a>
+                        <p class="producteurNom">Les Recettes de Bichette</p>
+                        <p class="producteurLieu">Osenbach</p>
+                    </div>
+                    <div class="div13Grid"> <a href="https://domainerominger.fr/"><img src="sources/vraiSite/producteurs/listeProducteurs/rominger.jpg"></a>
+                        <p class="producteurNom">Domaine Eric Rominger</p>
+                        <p class="producteurLieu">Westhalten</p>
+                    </div>
+                    <div class="div14Grid"> <a href="http://www.ferme-versant-du-soleil.fr/"><img src="sources/vraiSite/producteurs/listeProducteurs/fermeVersantSoleil.jpg"></a>
+                        <p class="producteurNom">Ferme Versant du soleil</p>
+                        <p class="producteurLieu">Hohrod</p>
+                    </div>
+                    <div class="div15Grid"> <a href="https://www.lisbeth.alsace/"><img src="sources/vraiSite/producteurs/listeProducteurs/lisbethSourcesSoultzmatt.jpg"></a>
+                        <p class="producteurNom">Sources de Soultzmatt</p>
+                        <p class="producteurLieu"> Soultzmatt</p>
+                    </div>
+                    <div class="div16Grid"> <a href="https://www.vinaigreriedesgourmets.fr/"><img src="sources/vraiSite/producteurs/listeProducteurs/vinaigrerieDesGourmets.jpg"></a>
+                        <p class="producteurNom">La Vinaigrerie des Gourmets</p>
+                        <p class="producteurLieu">Gundolsheim</p>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+
+        <!----------------------------------------------VALEURS------------------------------------------------------------->
+        <article id="valeurs">
+            <h1  class="h1_Even">Nos valeurs </h1>
+            <!-- <div class="divSeparateur divSeparateur_Even"></div> -->
+            <div class="marginDiv">
+                <div id="nosValeurs1">
+                    <div class="divSloganTexte">
+                        <span class="barreTexteSlogan_Even"></span>
+                        <p class="sloganTexte">Une mixité sociale et intergénérationnelle </p>
+                    </div>
+                    <p class="normalTexte">Le Festival Prés Salés revient pour sa 2ème édition les 23 et 24 juin 2023 prochains dans la ville de Soultzmatt.
+                        Cet événement musical est porteur de valeurs fortes et s'engage pour la mixité sociale et intergénérationnelle, la protection de l'environnement,
+                        ainsi que la promotion des producteurs locaux et éco-responsables.<br/> <br/>
+                        Organisé par l'association "Balance Ton Son", ce festival musical est devenu un rendez-vous incontournable pour les passionnés de musique,
+                        les amoureux de la Vallée Noble et les défenseurs de la diversité culturelle et de l'environnement.
+                    </p>
+                </div>
+
+                <div id="nosValeurs2">
+                    <div class="divSloganTexte">
+                        <span class="barreTexteSlogan_Even"></span>
+                        <p class="sloganTexte">Un festival pour tous !</p>
+                    </div>
+
+                    <p class="normalTexte">Nous proposons une programmation éclectique qui met à l'honneur des artistes locaux (mais aussi d'ailleurs). Pendant 2 soirées, le public pourra profiter
+                        de concerts de hip-hop, de reggae, de punk, de pop, de dub etc. Le tout à petit prix et gratuit pour les moins de 15 ans. Un festival pour TOUS !
+                    </p>
+                </div>
+
+                <div id="nosValeurs3">
+                    <div class="divSloganTexte">
+                        <span class="barreTexteSlogan_Even"></span>
+                        <p class="sloganTexte">L'environnement au centre de nos valeurs !</p>
+                    </div>
+                    <p class="normalTexte">
+                        Mais ce festival ne se limite pas à la musique. Du cirque, des performance artistiques et une mise en valeur de nos producteurs locaux. Nous proposons une offre alimentaire variée et saine, issue de l'agriculture biologique et raisonnée.
+                        Nous mettons également en place des mesures pour limiter l'impact écologique de l'événement : utilisation de matériaux recyclables, tri sélectif (mégots collectés, verre, recyclable, bio déchet...), encouragement au co-voiturage et à l’utilisation de transports doux (vélo/marche...), réduction du plastique à usage unique (gobelets réutilisables), sanitaires alternatifs.
+                    </p>
+                </div>
+
+
+
+
+
+            </div>
+        </article>
+
+
+        <!-------------------------------------------- PARTENAIRES----------------------------------------------------------->
+        <article id="partenaire">
+            <h1 class="h1_Odd">Devenir partenaire </h1>
+
+            <a href="https://express.adobe.com/page/WPNRPwgK4doEX/"> Devenir mécène</a>
+        </article>
+
+        <!---------------------------------------------INFOS GENERALES------------------------------------------------------->
+        <article id="infosGenerales">
+            <h1 class="h1_Even">Infos générales </h1>
+            <div class="marginDiv">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2001.2230061003065!2d7.221849977867194!3d47.96902175060026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47917c5e596cec85%3A0x5351820068b9a490!2sL&#39;Espace%20des%20Sources!5e0!3m2!1sfr!2sfr!4v1680889626380!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+        </article>
+
+        <!--------------------------------------------ESPACE PRESSE---------------------------------------------------------->
+        <article id="edition2022">
+            <h1 class="h1_Odd">Espace presse </h1>
+            <div class="marginDiv">
+                <div>
+                    <div class="divSloganTexte">
+                        <span class="barreTexteSlogan_Odd"></span>
+                        <p class="sloganTexte">Retour en images sur l'édition de 2022</p>
+                    </div>
+
+                </div>
+                <iframe  src="https://www.youtube.com/embed/OmZGHPVCgB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p id="espacePresse_Credits">Une vidéo réalisée par Elias Eckle - envolée filmique</p>
+            </div>
+
+
+        </article>
+    </main>
+
+
+    <button aria-hidden="true" type="button" class="movetop-btn" ><i class="fa-solid fa-arrow-up fa-xl"></i> </button>
+
+
+        <!------------------------------------------------FOOTER------------------------------------------------------------->
+    <footer>
+        <div>
+
+            <p><a href="http://balancetonson.alsace/">Association Balance Ton Son</a></p>
+            <p><a href="https://goo.gl/maps/x7nBvo5troqLJEE56">Chemin des Essarts 68570 Wintzfelden</a></p>
+            <p><a href="mailto:contact@balancetonson.alsace">contact@balancetonson.alsace</a></p>
+        </div>
+
+        <span></span>
+        <p> <a id="urlPreSales" href="https://www.festivalpressales.com/">www.festivalpressales.com</a></p>
+    </footer>
+<script src="js/btnReserver.js"></script>
+<script src="js/btnBack.js"></script>
+<script src="js/btnDecouvrez.js"></script>
 </body>
 </html>
