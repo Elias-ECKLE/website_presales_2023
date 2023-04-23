@@ -1,5 +1,34 @@
 
-#nosValeurs1, #nosValeurs2, #nosValeurs3{
+#valeurs #valeursDiv1{
+    display: flex;
 
-    margin-bottom:5%;
+}
+#valeurs #valeursDiv1 {
+    justify-content: right;
+    align-items: center;
+    margin:0;
+}
+#valeurs #valeursDiv2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#valeurs #valeursDiv1 img{
+    width: calc(100px + 75vw);
+    height:80vh;
+}
+
+#nosValeurs2{
+    margin-top:7%;
+}
+#valeursDiv2{
+    margin-top:2.5%;
+}
+
+
+
+/*icon feuille*/
+#valeurs #valeursDiv2 i{
+ margin-right:5%;
 }

@@ -189,9 +189,12 @@ h1{
     width:1%;
     background-color:#5b5b1b;
     margin-right:10px;
+
 }
 .normalTexte{
-    font-size:calc(6px + 1vw);
+    font-size:calc(5px + 1vw);
+    font-family: "Franklin Gothic Book";
+    line-height: 1.5;
 }
 
 

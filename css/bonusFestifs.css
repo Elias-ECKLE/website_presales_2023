@@ -1,0 +1,7 @@
+#bonusFestifs div{
+    display: flex;
+    justify-content: center;
+}
+#bonusFestifs img{
+    width:85%;
+}

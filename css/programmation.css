@@ -1,5 +1,8 @@
 
-#programmation img{
+#programmation #programmationDiv1 img{
+    width:calc(100px + 40vw);
+}
+#programmation #programmationDiv2 img{
     width:calc(100px + 40vw);
 }
 
@@ -59,6 +62,22 @@
     font-size: calc(2px + 2vw);
     margin-top:0;
 }
+.artistesListees a{
+    text-decoration:none;
+}
+#programmationDiv1 .artistesListees a{
+    color:black;
+    opacity:0.80;
+}
+#programmationDiv2 .artistesListees a{
+    color:white;
+    opacity:0.80;
+}#programmationDiv1 .artistesListees a:hover{
+     opacity:1;
+ }
+#programmationDiv2 .artistesListees a:hover{
+    opacity:1;
+}
 
 #divSloganTexteGastronomie{
     margin-top:14vh;
@@ -66,4 +85,111 @@
 #divSloganTexteGastronomie div{
     width:0.6%;
     margin-left:10px;
+}
+
+
+
+/*Titre groupes*/
+.divBarreGroupeTexte{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.barreTitreGroupe_Even{
+    width:37.5%;
+    height:12px;
+    background-color: #5b5b1b;
+}
+.barreTitreGroupe_Odd{
+    width:37.5%;
+    height:12px;
+    background-color: #f3e99f;
+}
+.titreGroupe{
+    width:25%;
+    margin:0;
+    margin-left:20px;
+    margin-right:20px;
+    font-size:4vw;
+    font-family: BebasNeue-Regular;
+    text-align: center;
+}
+.divIllustrationGroupe{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.divIllustrationGroupe .normalTexte{
+    margin-bottom: 0;
+    text-align: right;
+    margin-left:3%;
+}
+.divVideoGroupe{
+    aspect-ratio: 16/9;
+    position:relative;
+
+    display:flex;
+    justify-content: right;
+    align-items: center;
+    padding:0;
+    margin-bottom: -10%;
+    margin-top:-10%;
+
+}
+
+.divVideoGroupe iframe {
+    height:57.1%;
+    width:57.1%;
+    position:absolute;
+}
+
+
+
+
+
+
+
+#programmationDiv3{
+    margin-top:5%;
+}
+
+
+
+/* groupe au cas par cas*/
+#programmation  #programmationDiv3 #programmationDiv3-LesDeuxJours{
+    background-color: #5b5b1b;
+    padding-top:2.5%;
+    padding-bottom: 2.5%;
+    color:white;
+}
+.div3-GroupeIdentite{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom:7%;
+
+}
+.imgGroupe{
+    width:33.2vw;
+}
+#divIdentiteGroupe1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:2%;
+}
+#divIdentiteGroupe1 p{
+    margin-bottom:-3%;
+}
+#divIdentiteGroupe7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:2%;
+}
+#divIdentiteGroupe7 p{
+    margin-bottom:-3%;
 }
