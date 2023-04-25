@@ -8,7 +8,7 @@
 }
 
 #keskonDiv1 img{
-    width:calc(250px + 10vw);
+    width:20vw;
     margin-bottom: 75px;
 }
 #keskonDiv1 div:first-child{
@@ -36,7 +36,7 @@
 }
 
 .parentGrid_Keskon img{
-    width: calc(235px + 6vw);
+    width: calc(235px + 4vw);
     transition: transform .4s;
 }
 .parentGrid_Keskon img:hover{
@@ -50,12 +50,12 @@
 .producteurNom{
     color:white;
     font-family: BebasNeue-Regular;
-    font-size:calc(2px + 2vw);
+    font-size:calc(2px + 1.7vw);
     margin:0;
 }
 .producteurLieu{
     color: white;
-    font-size:calc(2px + 1.5vw);
+    font-size:calc(2px + 1.3vw);
     font-family: Inconsolata-Medium;
     margin:0;
 }
@@ -76,3 +76,66 @@
 .parentGrid_Keskon .div14Grid { grid-area: 4 / 2 / 5 / 3; }
 .parentGrid_Keskon .div15Grid { grid-area: 4 / 3 / 5 / 4; }
 .parentGrid_Keskon .div16Grid { grid-area: 4 / 4 / 5 / 5; }
+
+
+
+/*----------------------------------------------------------------------------------------------Responsive--------------------------------------------------*/
+
+/*tablet*/
+@media screen and (max-width: 1093px) {
+}
+
+
+/*mobile*/
+@media screen and (max-width: 680px) and (orientation: portrait){
+    #keskonDiv1{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    #keskonDiv1 .divSloganTexte{
+        justify-content: center;
+    }
+    #keskonDiv1 .normalTexte{
+        margin-top:0;
+    }
+    #keskonDiv1 img{
+        width:50vw;
+        margin:0;
+        margin-top:20px;
+    }
+
+    #keskonDiv1 div:first-child{
+        width:100%;
+        margin:0;
+    }
+    #divSloganTexteGastronomie{
+
+        margin-top:0;
+        margin-bottom: 20px;
+        text-align: center;
+
+    }
+
+
+
+    .parentGrid_Keskon{
+        display: block;
+    }
+    .parentGrid_Keskon div{
+        margin-bottom: 30px;
+    }
+    .parentGrid_Keskon div img{
+        width:70vw;
+    }
+    .producteurNom{
+        font-size:1.6em;
+
+    }
+    .producteurLieu{
+        font-size:1.3em;
+
+    }
+}

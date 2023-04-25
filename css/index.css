@@ -4,10 +4,6 @@
     font-family: 'BebasNeue-Regular';
     src: url("../font/BebasNeue-Regular.ttf");
 }
-@font-face{
-    font-family: 'BRLNSDB';
-    src: url("../font/BRLNSDB");
-}
 
 @font-face {
     font-family: 'Teko-SemiBold';
@@ -100,7 +96,7 @@ footer div{
     margin-bottom:20px;
 }
 footer div p{
-    font-size:17px;
+    font-size:13px;
     color:white;
 
 }
@@ -148,7 +144,7 @@ article:nth-child(even){
 
 h1{
     font-family: Proxima-Nova-Bold;
-    font-size: calc(30px + 2vw);
+    font-size: calc(30px + 1vw);
     margin-left:4vw;
     margin-top:3%;
     margin-bottom: 1%;
@@ -183,7 +179,7 @@ h1{
 
 }
 .sloganTexte{
-    font-size:calc(13px + 1.7vw);
+    font-size: 2.1vw;
     font-family: BebasNeue-Regular;
     margin:0;
 }
@@ -199,14 +195,14 @@ h1{
 
 }
 .normalTexte{
-    font-size:calc(5px + 1vw);
+    font-size:calc(3px + 1vw);
     font-family: "Franklin Gothic Book";
     line-height: 1.5;
 }
 .miTexte{
     text-align: center;
     font-family: Inconsolata ;
-    font-size:2em;
+    font-size:1.7em;
     margin-top:0;
     margin-bottom: 0;
     margin-left:10px;
@@ -254,7 +250,7 @@ h1{
     opacity:1;
 }
 .btnInteraction p{
-    font-size:calc(7px + 1vw);
+    font-size:calc(4px + 1vw);
     text-align: center;
 }
 
@@ -267,8 +263,42 @@ h1{
 
 
 /*mobile*/
-@media screen and (max-width: 600px) and (orientation: portrait) {
+@media screen and (max-width: 680px) and (orientation: portrait) {
+    .marginDiv{
+        margin-left:  5vw;
+        margin-right: 5vw;
+    }
+    header{
+        position: sticky;
+        top:0;
+    }
+    h1{
+        margin-left:0;
+        text-align: center;
+        margin-top:0;
+        margin-bottom:10px;
 
+    }
+    .divSloganTexte{
+        padding-top:20px;
+        padding-bottom:20px;
+        font-size:1.9em;
+    }
+    .normalTexte{
+        font-size:0.9em;
+    }
+    .miTexte{
+        font-size:1.3em;
+        width:100%;
+    }
+    .barreTitreTexte_Even{
+        width:10%;
+
+
+    }
+    .barreTitreTexte_Odd{
+        width:10%;
+    }
 }
 
 

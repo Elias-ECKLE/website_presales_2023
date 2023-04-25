@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
     <title>Festival Pré Salés</title>
+
 
     <!----------------------------------------------CSS------------------------------------------>
     <link href="css/index.css" rel="stylesheet">
@@ -24,13 +26,14 @@
 
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
     <script src="js/burgerMenu.js"></script>
+    <script src="js/coverMobile.js"></script>
 
     <script src="https://kit.fontawesome.com/858ff30383.js" crossorigin="anonymous"></script>
 
 
 
 </head>
-<body onload="setupBurgerMenu()" >
+<body onload="setupBurgerMenu()" onload="coverAdaptable()", onresize="coverAdaptable()">
 
 <!-----------------------------------------HEADER--------------------------------------------------------->
     <header>
@@ -55,7 +58,7 @@
                 <li><a href="#partenaire" onclick="closeNav2()">Devenir mécène </a> </li>
                 <li><a href="#infosGenerales" onclick="closeNav2()">Infos générales </a> </li>
                 <li><a href="#edition2022" onclick="closeNav2()">Espace presse </a> </li>
-                <li><a href="#" onclick="closeNav2()">Contact</a></li>
+                <li><a href="#edition2022Div2" onclick="closeNav2()">Contact</a></li>
             </ul>
         </div>
     </aside>
@@ -65,7 +68,7 @@
 
     <main>
         <!------------------------------------------COVER------------------------------------------------>
-        <article>
+        <article id="cover">
 
 
         </article>
@@ -664,7 +667,7 @@
             <div class="marginDiv">
                 <div class="divBarreTitreTexte">
                     <span class="barreTitreTexte_Odd"></span>
-                    <p class="miTexte">Objectis 2023 : <span class="tarifsGrossisement">1 600 </span>festivaliers et <span class="tarifsGrossisement">120 </span>bénévoles </p>
+                    <p class="miTexte">Objectifs 2023 : <span class="tarifsGrossisement">1 600 </span>festivaliers et <span class="tarifsGrossisement">120 </span>bénévoles </p>
                     <span class="barreTitreTexte_Odd"></span>
                 </div>
 
@@ -783,8 +786,8 @@
                             <p class="sloganTexte"> Prenez votre billet dès maintenant et gagnez du temps !  </p>
                         </div>
                         <div id="divInfoGenerales_ElmtsBilleterie">
-                            <a href="https://my.weezevent.com/festival-pres-sales-2023"><img src="sources/vraiSite/infosGenerales/billet2.jpg" alt="billeterie"></a>
-                            <a href="https://pass.culture.fr/"><img src="sources/vraiSite/billeterie/passCulture.jpg" alt="passCulture"></a>
+                            <a href="https://my.weezevent.com/festival-pres-sales-2023"><img id="imgBillet" src="sources/vraiSite/infosGenerales/billet2.jpg" alt="billeterie"></a>
+                            <a href="https://pass.culture.fr/"><img id="imgCulture" src="sources/vraiSite/billeterie/passCulture.jpg" alt="passCulture"></a>
                         </div>
 
                     </div>
@@ -849,12 +852,12 @@
                     </div>
                     <p class="normalTexte">Pour toute demande ou prise de contact, n'hésitez à nous contacter par mail ou directement par l'intermédiaire des réseaux sociaux du festival !</p>
                     <div class="contactsDivs">
-                        <i class="fa-solid fa-user fa-3x" style="color: #ffffff;"></i>
-                       <a href="http://balancetonson.alsace/" ><p class="miMiTexte">Association Balance Ton Son </p></a>
+
+                       <a href="http://balancetonson.alsace/" > <i class="fa-sharp fa-solid fa-location-pin fa-3x" style="color: #009fd0;"></i><p class="miMiTexte">Association Balance Ton Son </p></a>
                     </div>
                     <div class="contactsDivs">
-                        <i class="fa-sharp fa-solid fa-envelope fa-3x" style="color: #ffffff;"></i>
-                        <a href="mailto:contact@balancetonson.alsace"><p class="miMiTexte">contact@balancetonson.alsace</p></a>
+
+                        <a href="mailto:contact@balancetonson.alsace">  <i class="fa-sharp fa-solid fa-envelope fa-3x" style="color: #009fd0;"></i><p class="miMiTexte">contact@balancetonson.alsace</p></a>
                     </div>
                     <div class="contactsReseaux">
                             <a  href="https://www.facebook.com/PresSalesFestival"><img class="iconReseau" src="sources/icons/FB.png" alt="FacebookPresSales"></a>

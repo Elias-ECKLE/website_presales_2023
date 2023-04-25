@@ -4,7 +4,7 @@
     margin-right:auto;
 }
 #billeterie img{
-    width:calc(80px + 72vw);
+    width:calc(80px + 55vw);
 }
 
 #billeterieDiv2 img{
@@ -19,6 +19,7 @@
     margin:0;
     width:100%;
     color: white;
+    margin-bottom:8%;
 
 }
 
@@ -98,6 +99,7 @@ text-align:right;
 /*Interactions------------------------*/
 #billeterieDiv1 img{
     opacity:80%;
+    transition: opacity .4s;
 }
 #billeterieDiv1 img:hover{
     opacity:100%;
@@ -105,18 +107,20 @@ text-align:right;
 }
 #billeterieDiv2 img{
     opacity:80%;
+    transition: opacity .4s;
 }
 #billeterieDiv2 img:hover{
     opacity:100%;
     cursor: pointer;
 }
 .btnReserver{
-    width: calc(100px + 70vw);
+
+    width: calc(100px + 55vw);
     margin-left:auto;
     margin-right:auto;
-    height:7vh;
+    height:5vh;
     background-color: #f3e99f;
-    margin-top:3%;
+    margin-top:6%;
     opacity: 80%;
 }
 .btnReserver:hover{
@@ -128,3 +132,51 @@ text-align:right;
     font-family: Inconsolata-Medium;
 }
 
+
+
+/*----------------------------------------------------------------------------------------------Responsive--------------------------------------------------*/
+
+/*tablet*/
+@media screen and (max-width: 1093px) {
+}
+
+
+/*mobile*/
+@media screen and (max-width: 680px) and (orientation: portrait) {
+
+    #divBillet{
+        display: none;
+    }
+    #billeterie #billeterieDiv1{
+        align-items: center;
+        margin-bottom:10%;
+    }
+    #billeterie #billeterieDiv1-Gauche{
+        flex-direction: column;
+        margin-left:0px;
+    }
+    #billeterie #billeterieDivPlace .tarifsTextes{
+
+    }
+    #billeterie .divSloganTexte{
+        padding-top:0;
+    }
+    #billeterieDiv2-Droite{
+        text-align: center;
+    }
+    #billeterieDiv2 img{
+        width:50vw;
+    }
+    .btnReserver{
+        width:80%;
+        height:24px;
+    }
+    #billeterie .billeterieDivs:nth-child(2){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #billeterieDiv2-Droite .divSloganTexte{
+        justify-content: center;
+    }
+}

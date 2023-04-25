@@ -36,7 +36,7 @@
 /* div gauche*/
 #accueil div div:first-child{
     flex-direction: column;
-    width:64vw;
+    width:54vw;
     justify-content: space-between;
 }
 
@@ -63,4 +63,37 @@
 #btnDecouvrez p {
     color: #70510e;
     font-family: Inconsolata-Medium;
+}
+
+
+/*media queries*/
+/*mobile*/
+@media screen and (max-width: 680px) and (orientation: portrait) {
+    #accueil p{
+        font-size:0.6em;
+    }
+    #accueil div{
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-top:0%;
+        margin-bottom: 0%;
+    }
+
+    #accueil div div:first-child{
+       display:block;
+        margin-left:auto;
+        margin-right:auto;
+        width:100%;
+    }
+    #accueil img{
+        margin-top:10%;
+        margin-bottom: 7%;
+    }
+    #btnDecouvrez{
+       width:80%;
+        margin:auto;
+        height:24px;
+
+    }
+
 }

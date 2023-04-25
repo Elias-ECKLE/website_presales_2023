@@ -32,3 +32,40 @@
 #valeurs #valeursDiv2 i{
  margin-right:5%;
 }
+
+
+/*----------------------------------------------------------------------------------------------Responsive--------------------------------------------------*/
+
+/*tablet*/
+@media screen and (max-width: 1093px) {
+}
+
+
+/*mobile*/
+@media screen and (max-width: 680px) and (orientation: portrait){
+    #valeurs #valeursDiv1{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin: 0;
+
+
+    }
+    #valeurs #valeursDiv1 img {
+        width: 75vw;
+        height: 40vh;
+        margin-bottom:-5%;
+    }
+    #valeurs .divSloganTexte{
+        padding:0;
+    }
+
+    #nosValeurs2{
+        margin-top:3%;
+    }
+    #valeurs #valeursDiv2{
+        flex-direction: column-reverse;
+    }
+    #valeurs #valeursDiv2 i{
+        margin-right:0%;
+    }
+}

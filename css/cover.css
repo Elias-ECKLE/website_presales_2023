@@ -10,13 +10,4 @@ article:first-child{
     background-repeat: no-repeat;
     background-position: center;
 }
-article:first-child img{
-    width:calc(960px + 25vw);
-    height:calc(540px + 25vh);
-}
-#imgCover1{
 
-}
-#imgCover2{
-
-}

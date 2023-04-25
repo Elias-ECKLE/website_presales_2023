@@ -37,7 +37,6 @@
 }
 #programmationDiv1 p{
     font-family: BebasNeue-Regular;
-
 }
 
 
@@ -80,7 +79,7 @@
 }
 
 #divSloganTexteGastronomie{
-    margin-top:14vh;
+    margin-top:10vh;
 }
 #divSloganTexteGastronomie div{
     width:0.6%;
@@ -97,21 +96,21 @@
     align-items: center;
 }
 .barreTitreGroupe_Even{
-    width:37.5%;
-    height:12px;
+    width:33%;
+    height:9px;
     background-color: #5b5b1b;
 }
 .barreTitreGroupe_Odd{
-    width:37.5%;
+    width:33%;
     height:12px;
     background-color: #f3e99f;
 }
 .titreGroupe{
-    width:25%;
+    width:46%;
     margin:0;
     margin-left:20px;
     margin-right:20px;
-    font-size:4vw;
+    font-size:3vw;
     font-family: BebasNeue-Regular;
     text-align: center;
 }
@@ -133,14 +132,14 @@
     justify-content: right;
     align-items: center;
     padding:0;
-    margin-bottom: -10%;
-    margin-top:-10%;
+    margin-bottom: -20%;
+    margin-top:-17%;
 
 }
 
 .divVideoGroupe iframe {
-    height:57.1%;
-    width:57.1%;
+    height:39%;
+    width:39%;
     position:absolute;
 }
 
@@ -180,11 +179,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom:7%;
+    margin-bottom:3%;
 
 }
 .imgGroupe{
-    width:33.2vw;
+    width:25vw;
 }
 #divIdentiteGroupe1{
     display: flex;
@@ -194,7 +193,7 @@
     margin-top:2%;
 }
 #divIdentiteGroupe1 p{
-    margin-bottom:-3%;
+
 }
 #divIdentiteGroupe7{
     display: flex;
@@ -203,6 +202,91 @@
     align-items: center;
     margin-top:2%;
 }
-#divIdentiteGroupe7 p{
-    margin-bottom:-3%;
+
+
+
+/*----------------------------------------------------------------------------------------------Responsive--------------------------------------------------*/
+
+/*tablet*/
+@media screen and (max-width: 1093px) {
+}
+
+
+/*mobile*/
+@media screen and (max-width: 680px) and (orientation: portrait){
+    #programmationDiv1{
+        flex-direction: column;
+        align-items: center;
+        margin-top:3vh;
+    }
+    #programmationDiv1 p{
+        font-size:1em;
+        display: none;
+    }
+    #programmationDiv1 div{
+        margin-left:0;
+
+    }
+    #programmation #programmationDiv1 img{
+        width:70vw;
+    }
+    #programmation #programmationDiv2 img{
+        width:70vw;
+    }
+
+    #programmationDiv2{
+        flex-direction: column-reverse;
+
+        align-items: center;
+    }
+    #programmationDiv2 p{
+        display: none;
+    }
+
+
+    .barreTitreGroupe_Even{
+        width:20%;
+        height:5px;
+    }
+    .barreTitreGroupe_Odd{
+        width:20%;
+        height:5px;
+    }
+    .titreGroupe{
+        width:60%;
+        font-size:1.8em;
+    }
+
+    .div3-GroupeIdentite{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .divIllustrationGroupe{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .div3-GroupeIdentite img{
+        width:70%;
+        margin-top:4%;
+
+    }
+    .div3-GroupeIdentite p{
+        text-align: center;
+    }
+    .divVideoGroupe{
+        justify-content: center;
+        margin-bottom: 4%;
+    }
+    .divVideoGroupe iframe{
+        height:65%;
+        width:65%;
+        margin-top:10%;
+    }
+    .divIllustrationGroupe .normalTexte{
+        text-align: center;
+
+    }
+
 }
