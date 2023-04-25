@@ -51,11 +51,16 @@
 
 
 #btnDecouvrez{
-
     width: calc(100px + 14vw);
-    height:7vh;
+    height:50px;
     background-color: #f3e99f;
+    opacity:0.8;
+}
+#btnDecouvrez:hover{
+    opacity: 1;
+    cursor: pointer;
 }
 #btnDecouvrez p {
     color: #70510e;
+    font-family: Inconsolata-Medium;
 }

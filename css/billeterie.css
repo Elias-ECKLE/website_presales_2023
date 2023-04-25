@@ -1,20 +1,70 @@
 
-#billeterie #billeterieDivGlobale{
-    display: flex;
-    justify-content: space-between;
-
-}
-#billeterie p{
-    color:white;
+#billeterieDivGlobale{
+    margin-left:auto;
+    margin-right:auto;
 }
 #billeterie img{
-    width:calc(130px + 25vw);
+    width:calc(80px + 72vw);
+}
+
+#billeterieDiv2 img{
+    width:calc(80px + 7vw);
+}
+
+#billeterie .billeterieDivs{
+   display: flex;
+}
+#billeterie #billeterieDiv1{
+    flex-direction: column;
+    margin:0;
+    width:100%;
+    color: white;
+
+}
+
+#billeterie #billeterieDiv1-Gauche{
+    display: flex;
+    justify-content: center;
+    margin-left:50px;
+}
+#divBillet{
+    display: flex;
+    justify-content: center;
 }
 
 
 
+
+#billeterie .billeterieDivs:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content:center;
+    color: white;
+}
+
+
+
+#billeterieDiv2-Droite{
+   display: flex;
+    flex-direction: column;
+    width:70%;
+
+text-align:right;
+}
+#billeterieDiv2-Droite .divSloganTexte{
+    justify-content: right;
+
+}
+
+
+
+/*Gestion du styles des tarifs---------------------*/
 #billeterie #billeterieDivPrevente{
-    margin-bottom:5%;
+    width:100%;
+}
+#billeterie #billeterieDivPlace{
+    width:100%;
 }
 #billeterie #billeterieDivPrevente p{
     display:inline-block;
@@ -23,49 +73,58 @@
     display:inline-block;
     margin-left:50px;
 }
-#billeterie #billeterieDivPlace{
-    display: flex;
-    flex-direction: column;
-    margin-bottom:5%;
-    margin-left:25%;
-}
 
 #billeterie #billeterieDivPlace .tarifsTextes{
     display:inline-block;
     margin-left:50px;
-
 }
 
 
 
 
-#billeterie .tarifsGrossisement{
-    font-size:calc(13px + 1.6vw);
-    font-weight: bold;
-    color: #fff6c4;
-    font-family: BebasNeue-Regular;
-}
 
-
-
+/*Détails--------------------------------*/
 
 
 #billeterie .divSloganTexte p{
     color:white;
 }
+#billeterie .billeterieDivs:nth-child(2){
+    margin-top:3%;
+}
 
 
 
-/*bouton réserver------------------------*/
-#btnReserver{
-
-    width: calc(100px + 14vw);
+/*Interactions------------------------*/
+#billeterieDiv1 img{
+    opacity:80%;
+}
+#billeterieDiv1 img:hover{
+    opacity:100%;
+    cursor: pointer;
+}
+#billeterieDiv2 img{
+    opacity:80%;
+}
+#billeterieDiv2 img:hover{
+    opacity:100%;
+    cursor: pointer;
+}
+.btnReserver{
+    width: calc(100px + 70vw);
+    margin-left:auto;
+    margin-right:auto;
     height:7vh;
     background-color: #f3e99f;
-    margin-top:10%;
+    margin-top:3%;
+    opacity: 80%;
 }
-#btnReserver p {
+.btnReserver:hover{
+    opacity:1;
+    cursor:pointer;
+}
+.btnReserver p {
     color: #70510e;
+    font-family: Inconsolata-Medium;
 }
-
 

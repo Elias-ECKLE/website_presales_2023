@@ -32,8 +32,12 @@
     src: url("../font/Proxima-Nova-Bold.otf") format("truetype");
 }
 
+
 body{
-    margin:0;
+margin:0;
+
+
+
 }
 
 
@@ -66,8 +70,8 @@ header{
 #openBtn img{
     width:30%;
 }
-aside a {
-
+aside a{
+    font-family: Inconsolata-Medium;
 }
 
 
@@ -106,7 +110,9 @@ footer div p{
 #urlPreSales:hover{
     opacity: 1;
 }
-
+footer p{
+    font-family: Inconsolata-Medium;
+}
 footer span{
     border : 0.1px solid;
     border-color: white;
@@ -128,8 +134,8 @@ article {
     padding-bottom:100px;
 }
 .marginDiv{
-    margin-left:  4vw;
-    margin-right: 4vw;
+    margin-left:  6vw;
+    margin-right: 6vw;
 }
 
 article:nth-child(odd){
@@ -145,6 +151,7 @@ h1{
     font-size: calc(30px + 2vw);
     margin-left:4vw;
     margin-top:3%;
+    margin-bottom: 1%;
 
 }
 .h1_Odd{
@@ -172,7 +179,7 @@ h1{
     display: flex;
     flex-direction: row;
     paddin-top:20px;
-    margin:0;
+    margin-top:25px;
 
 }
 .sloganTexte{
@@ -196,9 +203,41 @@ h1{
     font-family: "Franklin Gothic Book";
     line-height: 1.5;
 }
+.miTexte{
+    text-align: center;
+    font-family: Inconsolata ;
+    font-size:2em;
+    margin-top:0;
+    margin-bottom: 0;
+    margin-left:10px;
+    margin-right:10px;
+}
+.divBarreTitreTexte{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    margin-bottom:60px;
+}
+.barreTitreTexte_Even{
+    width:20%;
+    height:10px;
+    background-color: #5b5b1b;
+}
+.barreTitreTexte_Odd{
+    width:20%;
+    height:10px;
+    background-color: #f3e99f;
+}
 
 
-
+.tarifsGrossisement{
+    font-size:calc(13px + 1.6vw);
+    font-weight: bold;
+    color: #fff6c4;
+    font-family: BebasNeue-Regular;
+}
 .btnInteraction{
     background-color: #1a1a1a;
     border-radius:10px;
@@ -207,6 +246,7 @@ h1{
     align-items: center;
 
     justify-content: center;
+    transition: opacity .4s;
 
 
 }
@@ -217,3 +257,18 @@ h1{
     font-size:calc(7px + 1vw);
     text-align: center;
 }
+
+
+/*----------------------------------------------------------------------------------------------Responsive--------------------------------------------------*/
+
+/*tablet*/
+@media screen and (max-width: 1093px) {
+}
+
+
+/*mobile*/
+@media screen and (max-width: 600px) and (orientation: portrait) {
+
+}
+
+

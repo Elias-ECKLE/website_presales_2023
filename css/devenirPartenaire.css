@@ -1,0 +1,83 @@
+#partenaire .divBarreTitreTexte{
+    color:white;
+    margin-bottom:5%;
+}
+#partenaire .divSloganTexte{
+    color:white;
+}
+#partenaire #sousDivParagraphesMecenes2{
+    margin-top:4%;
+}
+#partenaire #sousDivParagraphesMecenes1 .divSloganTexte{
+    margin-top:0%;
+}
+#partenaire #sousDivParagraphesMecenes2 .divSloganTexte{
+    margin-top:0%;
+}
+#partenaire .btnMecene{
+    width: 92vw;
+    margin-left:auto;
+    margin-right:auto;
+    height:7vh;
+    background-color: #f3e99f;
+    margin-top:3%;
+    opacity: 80%;
+}
+#partenaire .btnMecene:hover{
+    opacity:1;
+    cursor:pointer;
+}
+#partenaire #divParagrapheMecenes1{
+    color:white;
+}
+#partenaire #divParagrapheMecenes2{
+    color:white;
+    margin-bottom: 90px;
+}
+
+ #partenaire .btnMecene p {
+    color: #70510e;
+    font-family: Inconsolata-Medium;
+}
+
+#sousDivParagraphesMecenes1{
+    display: flex;
+    justify-content: flex-start;
+}
+#sousDivParagraphesMecenes1 img{
+    width:calc(80px + 21vw);
+    margin-right:24px;
+}
+
+ #sousDivParagraphesMecenes2{
+     display: flex;
+     justify-content: flex-start;
+ }
+#sousDivParagraphesMecenes2 img{
+    width:calc(80px + 12vw);
+}
+
+#divLogosMecenes1{
+    display: flex;
+    justify-content: center;
+}
+#divLogosMecenes2{
+    display: flex;
+    justify-content: center;
+
+}
+#divLogosMecenes img{
+    width:14vw;
+    padding-left:6px;
+    padding-right:6px;
+    padding-top:10px;
+    transition: transform .4s;
+
+}
+#divLogosMecenes img:hover{
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05);
+    z-index:0;
+    cursor: pointer;
+}

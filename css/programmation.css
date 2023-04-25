@@ -153,7 +153,17 @@
 #programmationDiv3{
     margin-top:5%;
 }
-
+#programmationDiv3 img{
+    transition: transform .4s;
+}
+#programmationDiv3 img:hover{
+    transition: transform .4s;
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.03);
+    z-index:0;
+    cursor: pointer;
+}
 
 
 /* groupe au cas par cas*/
@@ -162,6 +172,9 @@
     padding-top:2.5%;
     padding-bottom: 2.5%;
     color:white;
+}
+#programmationDiv3-Samedi{
+    margin-top:5%;
 }
 .div3-GroupeIdentite{
     display: flex;

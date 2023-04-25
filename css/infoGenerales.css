@@ -1,4 +1,134 @@
-#infosGenerales div{
-    margin-left: auto;
-    margin-right: auto;
+/*petiteCover------------------*/
+#infosGenerales #divPetiteCover{
+    display: flex;
+    justify-content: center;
+    margin-bottom:5%;
+}
+#infosGenerales #divPetiteCover img{
+    width:calc(100px + 60vw);
+}
+
+/*global------------------------*/
+#infosGenerales #divInfosGenerales1{
+    background-color: #5b5b1b;
+    width:100vw;
+    padding-top:2%;
+    padding-bottom:4%;
+}
+#infosGenerales #sousDivInfosGenerales1{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+}
+
+
+
+
+#infosGenerales #divInfosGenerales2{
+    display: flex;
+    justify-content: space-between;
+}
+#infosGenerales #divInfosGenerales1 .sloganTexte{
+    color:white;
+}
+#infosGenerales #divInfosGenerales2 .barreTexteSlogan_Odd{
+    background-color: #5b5b1b;
+}
+#divInfoGenerales_ElmtsBilleterie{
+    display: flex;
+
+}
+#divInfoGenerales_ElmtsBilleterie img{
+    padding-left:10px;
+    padding-right:10px;
+
+}
+
+#divInfosGenerales3 .sousDivReseaux {
+    display: flex;
+    justify-content: space-between;
+}
+#divInfosGenerales3 .sousDivReseaux a{
+    text-decoration: none;
+}
+#divInfosGenerales3 .sousDivReseaux p{
+    font-size:1.9em;
+    color: black;
+    margin-left:350px;
+    text-decoration: none;
+    opacity:0.8;
+
+}
+#divInfosGenerales3 .sousDivReseaux p:hover{
+    opacity: 1;
+}
+#divInfosGenerales3{
+    height:50vh;
+}
+
+
+#infosGenerales .divSloganTexte{
+    margin-bottom:30px;
+
+ }
+
+#divImgToiComment{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.map-responsive{
+
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position: relative;
+    height:0;
+
+    display: flex;
+    justify-content: center;
+    margin-right:7%;
+}
+
+.map-responsive iframe{
+
+    height:120%;
+    width:80%;
+    position:absolute;
+
+}
+
+
+
+
+#infosGenerales #divInfosGenerales1 img{
+    width: 28vw;
+}
+#infosGenerales #divInfosGenerales2 img{
+    width: 21.5vw;
+    opacity: 0.8;
+    transition: opacity .4s;
+}
+#infosGenerales #divInfosGenerales2 img:hover{
+    opacity: 1;
+}
+
+#infosGenerales #divInfosGenerales2 .iconReseau{
+    width:calc(50px + 2vw);
+}
+
+#infosGenerales .btnReserver{
+    width: 91vw;
+    background-color: #5b5b1b;
+}
+#infosGenerales .btnReserver p{
+    color: #f3e99f;
+}
+
+.traitsInfosGenerales_Reseaux{
+    height:3px;
+    background-color:#5b5b1b;
 }

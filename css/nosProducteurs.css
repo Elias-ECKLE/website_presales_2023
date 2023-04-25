@@ -44,6 +44,7 @@
     -webkit-transform: scale(1.05); /* Safari 3-8 */
     transform: scale(1.05);
     z-index:0;
+    cursor: pointer;
 }
 
 .producteurNom{
@@ -55,7 +56,7 @@
 .producteurLieu{
     color: white;
     font-size:calc(2px + 1.5vw);
-    font-family: Teko-SemiBold;
+    font-family: Inconsolata-Medium;
     margin:0;
 }
 
