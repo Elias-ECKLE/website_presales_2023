@@ -39,6 +39,9 @@
 #edition2022Div2{
     margin-top:7%;
 }
+#edition2022Div2 .normalTexte{
+    margin-top:4%;
+}
 #edition2022 .miTexte{
     text-align: center;
     font-family: Inconsolata ;
@@ -73,22 +76,22 @@
     text-decoration: none;
 }
 #edition2022 .contactsDivs{
-display: flex;
-
-    flex-direction: column;
-    align-items: center;
-
+    display: flex;
+    justify-content: space-around;
+    margin-top:20px;
+    margin-bottom: 2px;
 }
 #edition2022 .contactsReseaux{
     display: flex;
     justify-content: center;
-    align-items: center;
-
-
+    margin-top:3%;
+    margin-bottom:3%;
 }
 #edition2022 .contactsReseaux img{
     width:70%;
     margin:0;
+    margin-left:10%;
+    margin-right:10%;
     margin-top:13px;
     opacity: 0.70;
     transition : opacity .4s;
@@ -115,6 +118,14 @@ display: flex;
     opacity:1;
     cursor: pointer;
 }
+.traitsEspacePresse_Reseaux{
+    height:3px;
+    margin-left:auto;
+    margin-right: auto;
+    width:70%;
+    background-color: #f3e99f;
+}
+
 
 /*----------------------------------------------------------------------------------------------Responsive--------------------------------------------------*/
 
