@@ -4,10 +4,26 @@ article:first-child{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    opacity: 0.9;
 
     background-image: url("../sources/vraiSite/cover/planchesCover.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+article:first-child:hover{
+    opacity: 1;
+}
 
+/*----------------------------------------------------------------------------------------------Responsive--------------------------------------------------*/
+
+/*tablet*/
+@media screen and (max-width: 1093px) {
+}
+
+
+/*mobile*/
+@media screen and (max-width: 680px) and (orientation: portrait){
+
+
+}

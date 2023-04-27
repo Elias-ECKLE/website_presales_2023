@@ -14,7 +14,7 @@ btn.addEventListener('click',()=>{
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    console.log(window.scrollY);
+    //console.log(window.scrollY);
     if (window.scrollY > window.innerWidth*3) {
         btn.style.display = "block";
     } else {

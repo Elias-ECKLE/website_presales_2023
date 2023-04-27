@@ -115,10 +115,10 @@ text-align:right;
 }
 .btnReserver{
 
-    width: calc(100px + 55vw);
+    width: 60vw;
     margin-left:auto;
     margin-right:auto;
-    height:5vh;
+    height:6vh;
     background-color: #f3e99f;
     margin-top:6%;
     opacity: 80%;
@@ -143,6 +143,9 @@ text-align:right;
 
 /*mobile*/
 @media screen and (max-width: 680px) and (orientation: portrait) {
+    #billeterieDivGlobale{
+        text-align: center;
+    }
 
     #divBillet{
         display: none;
@@ -154,18 +157,21 @@ text-align:right;
     #billeterie #billeterieDiv1-Gauche{
         flex-direction: column;
         margin-left:0px;
+
     }
     #billeterie #billeterieDivPlace .tarifsTextes{
 
     }
     #billeterie .divSloganTexte{
         padding-top:0;
+        margin-left:3%;
+        margin-right:3%;
     }
     #billeterieDiv2-Droite{
         text-align: center;
     }
     #billeterieDiv2 img{
-        width:50vw;
+        width:80vw;
     }
     .btnReserver{
         width:80%;
@@ -178,5 +184,8 @@ text-align:right;
     }
     #billeterieDiv2-Droite .divSloganTexte{
         justify-content: center;
+    }
+    .btnReserver{
+        height:50px;
     }
 }

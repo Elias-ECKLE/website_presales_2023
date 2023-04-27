@@ -120,8 +120,8 @@
 
 #infosGenerales .btnReserver{
     margin-top:5%;
-    width: 25vw;
-    height:5vh;
+    width: 60vw;
+    height:6vh;
     background-color: #5b5b1b;
 }
 #infosGenerales .btnReserver p{
@@ -156,7 +156,7 @@
         align-items: center;
     }
     #infosGenerales #sousDivInfosGenerales1 img{
-        width:70vw;
+        width:80vw;
         margin-top:-10%;
     }
 
@@ -166,17 +166,22 @@
         margin-bottom:10%;
 
     }
+    .map-responsive iframe{
+        height:200%;
+        width:90%;
+    }
 
 
     #infosGenerales #divInfosGenerales2{
         flex-direction: column;
     }
-    #divInfoGenerales_ElmtsBilleterie{
-        display: block;
+    #infosGenerales #divInfoGenerales_ElmtsBilleterie {
 
-
+        flex-direction: column;
     }
-
+    #infosGenerales #divInfosGenerales2 img{
+        width: 66vw;
+    }
     #infosGenerales #divInfosGenerales2{
         flex-direction: column-reverse;
         text-align: center;
@@ -186,9 +191,14 @@
         display : flex;
         flex-direction: column;
         align-items: center;
+        height:35vh;
     }
-    #divInfosGenerales3 .sousDivInfosGenerales3{
+    #sousDivInfosGenerales3{
+        display: flex;
+        justify-content: space-around;
+
     }
+
     #divInfosGenerales3 .sousDivReseaux{
         display: flex;
         flex-direction: row;
@@ -196,6 +206,9 @@
     }
     #divInfosGenerales3 .sousDivReseaux p{
         display: none;
+    }
+    #infosGenerales #divInfosGenerales2 .iconReseau{
+        width:70%;
     }
 
 
@@ -206,5 +219,6 @@
 
     #infosGenerales .btnReserver{
         width:70vw;
+        height:50px;
     }
 }

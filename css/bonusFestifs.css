@@ -6,3 +6,18 @@
     margin-top:2.5%;
     width:65%;
 }
+
+/*----------------------------------------------------------------------------------------------Responsive--------------------------------------------------*/
+
+/*tablet*/
+@media screen and (max-width: 1093px) {
+}
+
+
+/*mobile*/
+@media screen and (max-width: 680px) and (orientation: portrait) {
+    #bonusFestifs img{
+        width:100%;  margin-bottom: 0;
+
+    }
+}

@@ -69,30 +69,28 @@
 /*media queries*/
 /*mobile*/
 @media screen and (max-width: 680px) and (orientation: portrait) {
-    #accueil p{
-        font-size:0.6em;
-    }
+
     #accueil div{
         flex-direction: column-reverse;
+        align-items: center;
         text-align: center;
         margin-top:0%;
         margin-bottom: 0%;
     }
 
     #accueil div div:first-child{
-       display:block;
-        margin-left:auto;
-        margin-right:auto;
+
         width:100%;
     }
-    #accueil img{
+    #accueil div img{
         margin-top:10%;
         margin-bottom: 7%;
+        width:90vw;
     }
     #btnDecouvrez{
        width:80%;
         margin:auto;
-        height:24px;
+
 
     }
 

@@ -3,9 +3,9 @@ function setupBurgerMenu() {
     var sidenav = document.getElementById("mySidenav");
     var openBtn = document.getElementById("openBtn");
     var closeBtn = document.getElementById("closeBtn");
-    console.log(sidenav)
-    console.log(openBtn)
-    console.log(closeBtn)
+    //console.log(sidenav)
+    //console.log(openBtn)
+    //console.log(closeBtn)
 
     openBtn.onclick = openNav;
     closeBtn.onclick = closeNav;

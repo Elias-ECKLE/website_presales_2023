@@ -15,10 +15,10 @@
     margin-top:0%;
 }
 #partenaire .btnMecene{
-    width: 25vw;
+    width: 60vw;
     margin-left:auto;
     margin-right:auto;
-    height:5vh;
+    height:6vh;
     background-color: #f3e99f;
     margin-top:3%;
     opacity: 80%;
@@ -105,12 +105,15 @@
         margin:0;
     }
     #sousDivParagraphesMecenes1 img{
-        width:70vw;
+        width:  80vw;
         margin:0;
         margin-bottom:10%;
     }
+    #partenaire #divParagrapheMecenes2{
+        margin-bottom: 15%;
+    }
     #sousDivParagraphesMecenes2 img{
-        width:70vw;
+        width:80vw;
     }
 
 
@@ -136,5 +139,8 @@
     }
     #divLogosMecenes img{
         width:40vw;
+    }
+    #partenaire .btnMecene{
+        height:50px;
     }
 }

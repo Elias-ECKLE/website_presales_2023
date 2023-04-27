@@ -6,7 +6,6 @@
     width:calc(100px + 40vw);
 }
 
-
 #programmationDivGlobal{
     margin-top:5px;
 
@@ -220,7 +219,6 @@
         margin-top:3vh;
     }
     #programmationDiv1 p{
-        font-size:1em;
         display: none;
     }
     #programmationDiv1 div{
@@ -228,15 +226,14 @@
 
     }
     #programmation #programmationDiv1 img{
-        width:70vw;
+        width:95vw;
     }
     #programmation #programmationDiv2 img{
-        width:70vw;
+        width:95vw;
     }
 
     #programmationDiv2{
         flex-direction: column-reverse;
-
         align-items: center;
     }
     #programmationDiv2 p{
@@ -245,16 +242,16 @@
 
 
     .barreTitreGroupe_Even{
-        width:20%;
+        width:10%;
         height:5px;
     }
     .barreTitreGroupe_Odd{
-        width:20%;
+        width:10%;
         height:5px;
     }
     .titreGroupe{
-        width:60%;
-        font-size:1.8em;
+        width:80%;
+        font-size:2.4em;
     }
 
     .div3-GroupeIdentite{
@@ -268,7 +265,7 @@
     }
 
     .div3-GroupeIdentite img{
-        width:70%;
+        width:90%;
         margin-top:4%;
 
     }
@@ -277,12 +274,12 @@
     }
     .divVideoGroupe{
         justify-content: center;
-        margin-bottom: 4%;
+        margin-bottom: 30%;
     }
     .divVideoGroupe iframe{
-        height:65%;
-        width:65%;
-        margin-top:10%;
+        height:80%;
+        width:80%;
+        margin-top:30%;
     }
     .divIllustrationGroupe .normalTexte{
         text-align: center;
