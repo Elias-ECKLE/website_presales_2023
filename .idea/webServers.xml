@@ -9,7 +9,7 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
-      <webServer id="377e4470-9e3f-41c4-8dea-db4db820bf21" name="ftp.cluster030.josting.ovh.net" url="http://ftp.cluster030.hosting.ovh.net">
+      <webServer id="4e806741-dde7-48a2-89e7-428a0c65ce5f" name="presales_thomas" url="http://ftp.cluster030.hosting.ovh.net">
         <fileTransfer host="ftp.cluster030.hosting.ovh.net" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
