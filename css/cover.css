@@ -18,12 +18,12 @@ article:first-child:hover{
 /*----------------------------------------------------------------------------------------------Responsive--------------------------------------------------*/
 
 /*tablet*/
-@media screen and (max-width: 1093px) {
+@media screen and (max-width: 1100px) {
 }
 
 
 /*mobile*/
-@media screen and (max-width: 680px) and (orientation: portrait){
+@media screen and (max-width: 600px) and (orientation: portrait){
 
 
 }

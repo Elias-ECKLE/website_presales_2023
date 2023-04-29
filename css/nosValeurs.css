@@ -37,12 +37,16 @@
 /*----------------------------------------------------------------------------------------------Responsive--------------------------------------------------*/
 
 /*tablet*/
-@media screen and (max-width: 1093px) {
+@media screen and (max-width: 1100px) {
+    #valeurs #valeursDiv1 img{
+        width:40vw;
+        height:50vh;
+    }
 }
 
 
 /*mobile*/
-@media screen and (max-width: 680px) and (orientation: portrait){
+@media screen and (max-width: 600px) and (orientation: portrait){
     #valeurs #valeursDiv1{
         flex-direction: column-reverse;
         justify-content: center;

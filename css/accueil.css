@@ -67,8 +67,11 @@
 
 
 /*media queries*/
+
+
+
 /*mobile*/
-@media screen and (max-width: 680px) and (orientation: portrait) {
+@media screen and (max-width: 600px) and (orientation: portrait) {
 
     #accueil div{
         flex-direction: column-reverse;
@@ -90,6 +93,7 @@
     #btnDecouvrez{
        width:80%;
         margin:auto;
+        height:7vh;
 
 
     }

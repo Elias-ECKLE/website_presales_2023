@@ -84,7 +84,7 @@ width:90%;
 
 /*------------------------------------------------------------------------*/
 /*tablet*/
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1100px) {
     #childDiv1 img{
         width:110%;
     }

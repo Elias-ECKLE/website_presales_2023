@@ -252,17 +252,32 @@ h1{
     font-size:1.2em;
     text-align: center;
 }
+.tarifsGrossisement{
+    font-size:1.7em;
+}
 
 
 /*----------------------------------------------------------------------------------------------Responsive--------------------------------------------------*/
 
 /*tablet*/
-@media screen and (max-width: 1093px) {
+@media screen and (max-width: 1100px) {
+
+    .normalTexte{
+        font-size:1.2em;
+    }
+    .sloganTexte{
+        font-size:1.7em;
+    }
+    .miTexte{
+        font-size:1.8em;
+        width:100%;
+    }
+
 }
 
 
 /*mobile*/
-@media screen and (max-width: 680px) and (orientation: portrait) {
+@media screen and (max-width: 600px) and (orientation: portrait) {
 
     footer div{
         flex-direction: column;
