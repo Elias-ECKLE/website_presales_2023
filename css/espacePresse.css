@@ -134,8 +134,38 @@
 }
 
 
+@media screen and (max-width: 900px){
+    #divsEdition2022 .divSloganTexte{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0px;
 
-/*mobile*/
+    }
+    #edition2022Div1 .divSloganTexte{
+      margin-bottom:-5%;
+    }
+    #edition2022Div2{
+        align-items: center;
+    }
+    #edition2022 .contactsDivs{
+        flex-direction: column;
+    }
+    .video-responsive{
+        margin-top:4%;
+        margin-bottom:1%;
+
+    }
+    .video-responsive iframe{
+        width:80%;
+        height:80%;
+    }
+    #espacePresse_Credits{
+
+    }
+}
+
+
+    /*mobile*/
 @media screen and (max-width: 600px) and (orientation: portrait) {
     #divsEdition2022 .divSloganTexte{
         flex-direction: column;

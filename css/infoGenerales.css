@@ -137,7 +137,91 @@
 @media screen and (max-width: 1100px) {
 }
 
+@media screen and (max-width: 900px){
 
+    #infosGenerales .divBarreTitreTexte{
+        margin-bottom: 35px;
+    }
+    #infosGenerales #divPetiteCover img{
+        width:80vw;
+    }
+   #infosGenerales divInfosGenerales2 #sousDivInfosGenerales2{
+        text-align: center;
+    }
+    #infosGenerales #sousDivInfosGenerales1{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    #infosGenerales #sousDivInfosGenerales1 img{
+        width:50vw;
+        margin-top:-6%;
+    }
+
+    .map-responsive{
+        margin:0;
+        margin-top:-5%;
+        margin-bottom:10%;
+
+    }
+    .map-responsive iframe{
+        height:200%;
+        width:90%;
+    }
+
+    #infosGenerales #divInfosGenerales2{
+        flex-direction: column;
+        align-items: center;
+    }
+    #infosGenerales #divInfoGenerales_ElmtsBilleterie {
+        flex-direction: row;
+        justify-content: center;
+    }
+    #infosGenerales #divInfosGenerales2 img{
+        width: 30vw;
+    }
+    #infosGenerales #divInfosGenerales2{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    #divInfosGenerales3{
+        display : flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sousDivInfosGenerales3{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #divInfosGenerales3 .sousDivReseaux{
+        display: flex;
+        flex-direction: row;
+
+    }
+    #divInfosGenerales3 .sousDivReseaux p{
+        display: none;
+    }
+    #infosGenerales #divInfosGenerales2 .iconReseau{
+        width:70%;
+    }
+
+    .traitsInfosGenerales_Reseaux{
+        display: none;
+    }
+
+    #infosGenerales .btnReserver{
+        width:70vw;
+        height:50px;
+    }
+    #infosGenerales .divSloganTexte{
+        text-align: center;
+
+    }
+
+}
 
 /*mobile*/
 @media screen and (max-width: 600px) and (orientation: portrait) {

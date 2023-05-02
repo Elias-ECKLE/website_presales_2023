@@ -52,6 +52,7 @@
 
 #btnDecouvrez{
     width: calc(100px + 14vw);
+    margin-top:5%;
     height:50px;
     background-color: #f3e99f;
     opacity:0.8;
@@ -68,6 +69,35 @@
 
 /*media queries*/
 
+
+/*tablet horizontal*/
+@media screen and (max-width: 1100px) {
+}
+/*tablet vertical*/
+@media screen and (max-width: 900px){
+    #accueil div{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        margin-top:0%;
+        margin-bottom: 0%;
+    }
+
+    #accueil div div:first-child{
+        width:100%;
+    }
+    #accueil div img{
+        margin-top:10%;
+        margin-bottom: 7%;
+        width:60vw;
+    }
+    #btnDecouvrez{
+        width:80%;
+        margin:auto;
+        height:7vh;
+    }
+
+}
 
 
 /*mobile*/
@@ -94,8 +124,6 @@
        width:80%;
         margin:auto;
         height:7vh;
-
-
     }
 
 }

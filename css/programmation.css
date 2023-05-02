@@ -59,8 +59,6 @@
     width:40vw;
     font-size: calc(2px + 2vw);
     margin-top:0;
-
-
 }
 .artistesListees a{
     text-decoration:none;
@@ -206,12 +204,91 @@
 
 /*----------------------------------------------------------------------------------------------Responsive--------------------------------------------------*/
 
-/*tablet*/
+/*tablet horizontal*/
 @media screen and (max-width: 1100px) {
 }
 
+/*tablet vertical*/
+@media screen and (max-width: 900px){
+    #programmationDiv1{
+        flex-direction: column;
+        align-items: center;
+        margin-top:3vh;
+    }
+    #programmationDiv1 p{
+        display: none;
+    }
+    #programmationDiv1 div{
+        margin-left:0;
+
+    }
+    #programmation #programmationDiv1 img{
+        width:70vw;
+    }
+    #programmation #programmationDiv2 img{
+        width:70vw;
+    }
+
+    #programmationDiv2{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #programmationDiv2 p{
+        display: none;
+    }
+
+
+    .barreTitreGroupe_Even{
+        width:10%;
+        height:5px;
+    }
+    .barreTitreGroupe_Odd{
+        width:10%;
+        height:5px;
+    }
+    .titreGroupe{
+        width:80%;
+        font-size:2.4em;
+    }
+
+    .div3-GroupeIdentite{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .divIllustrationGroupe{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .div3-GroupeIdentite img{
+        width:50%;
+        margin-top:4%;
+
+    }
+    .div3-GroupeIdentite p{
+        text-align: center;
+    }
+    .divVideoGroupe{
+        justify-content: center;
+        margin-bottom: 10%;
+    }
+    .divVideoGroupe iframe{
+        height:60%;
+        width:60%;
+        margin-top:30%;
+    }
+    .divIllustrationGroupe .normalTexte{
+        text-align: center;
+
+    }
+
+}
+
+
+
 /*mobile*/
-@media screen and (max-width: 700px) and (orientation: portrait){
+@media screen and (max-width: 600px) and (orientation: portrait){
     #programmationDiv1{
         flex-direction: column;
         align-items: center;

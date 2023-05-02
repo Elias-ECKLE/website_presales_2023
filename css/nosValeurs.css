@@ -1,6 +1,12 @@
 
+#valeurs #nosValeurs1{
+    display: flex;
+    flex-direction: row;
+}
 #valeurs #valeursDiv1{
     display: flex;
+    flex-direction: row;
+
 
 }
 #valeurs #valeursDiv1 {
@@ -15,13 +21,10 @@
 }
 
 #valeurs #valeursDiv1 img{
-    width: calc(100px + 75vw);
-    height:80vh;
+    width: 30vw;
 }
 
-#nosValeurs2{
-    margin-top:7%;
-}
+
 #valeursDiv2{
     margin-top:2.5%;
 }
@@ -38,29 +41,41 @@
 
 /*tablet*/
 @media screen and (max-width: 1100px) {
+
+
+    #valeurs #nosValeurs1Div_Image{
+        display: flex;
+        align-items: center;
+    }
     #valeurs #valeursDiv1 img{
         width:40vw;
-        height:50vh;
+
     }
 }
 
+@media screen and (max-width: 900px){
+    #valeurs p{
+        text-align: center;
+    }
 
-/*mobile*/
-@media screen and (max-width: 600px) and (orientation: portrait){
+    #valeurs #nosValeurs1{
+        display: flex;
+        flex-direction: column;
+    }
     #valeurs #valeursDiv1{
         flex-direction: column-reverse;
         justify-content: center;
-        margin: 0;
-
-
+        align-items: center;
     }
-    #valeurs #valeursDiv1 img {
-        width: 75vw;
-        height: 40vh;
-        margin-bottom:-5%;
+    #valeurs #valeursDiv1 img{
+        width:50vw;
+        margin-bottom:0;
+        margin:auto;
+
     }
     #valeurs .divSloganTexte{
         padding:0;
+
     }
 
     #nosValeurs2{
@@ -71,5 +86,50 @@
     }
     #valeurs #valeursDiv2 i{
         margin-right:0%;
+    }
+
+    #valeurs .divSloganTexte{
+        justify-content: center;
+    }
+}
+
+/*mobile*/
+@media screen and (max-width: 600px) and (orientation: portrait){
+    #valeurs p{
+        text-align: center;
+    }
+
+    #valeurs #nosValeurs1{
+        display: flex;
+        flex-direction: column;
+    }
+    #valeurs #valeursDiv1{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #valeurs #valeursDiv1 img{
+        width:80vw;
+        margin-bottom:0;
+        margin:auto;
+
+    }
+    #valeurs .divSloganTexte{
+        padding:0;
+
+    }
+
+    #nosValeurs2{
+        margin-top:3%;
+    }
+    #valeurs #valeursDiv2{
+        flex-direction: column-reverse;
+    }
+    #valeurs #valeursDiv2 i{
+        margin-right:0%;
+    }
+
+    #valeurs .divSloganTexte{
+        justify-content: center;
     }
 }
